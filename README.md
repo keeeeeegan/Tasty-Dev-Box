@@ -1,4 +1,4 @@
-Vagrant + Chef + LAMP. At the very the least, idea is to replace the need for XAMPP.
+Vagrant + Chef + LAMP. At the very the least, the idea is to replace the need for XAMPP on Windows.
 
 # Install on Windows
 
