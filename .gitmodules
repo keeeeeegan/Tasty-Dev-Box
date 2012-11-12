@@ -7,12 +7,6 @@
 [submodule "cookbooks/mysql"]
 	path = cookbooks/mysql
 	url = git://github.com/opscode-cookbooks/mysql.git
-[submodule "build-essential"]
-	path = build-essential
-	url = git://github.com/opscode-cookbooks/build-essential.git
-[submodule "cookbooks/build-essential"]
-	path = cookbooks/build-essential
-	url = git://github.com/opscode-cookbooks/build-essential.git
 [submodule "cookbooks/openssl"]
 	path = cookbooks/openssl
 	url = git://github.com/opscode-cookbooks/openssl.git
