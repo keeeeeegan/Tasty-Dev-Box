@@ -1,3 +1,7 @@
+SITE_NAME = "localhost"
+LOCAL_DIR = "../"
+SRV_DIR = "/mnt/#{SITE_NAME}"
+
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 def Kernel.is_windows?
@@ -25,7 +29,7 @@ Vagrant::Config.run do |config|
   #config.vm.forward_port 8000, 8001
 
   nfs = !Kernel.is_windows?
-  config.vm.share_folder "localdev", "/mnt/localdev", "../", :nfs => nfs
+  config.vm.share_folder SITE_NAME, SRV_DIR, LOCAL_DIR, :nfs => nfs
 
   # install the newest version of the chef gem
   # because the lucid box has an older version
