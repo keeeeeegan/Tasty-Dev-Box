@@ -6,7 +6,7 @@ end
 # setup the main localhost
 web_app "localhost" do
 	server_name "localhost"
-	server_aliases [node[:hostname], "localhost"]
+	server_aliases "localhost"
 	docroot "/mnt/localdev"
 	template "localhost.conf.erb"
 	directory_options "FollowSymLinks Indexes"
