@@ -19,6 +19,12 @@ package "php5-memcached" do
 	notifies :reload, "service[apache2]"
 end
 
+# install php5 curl
+package "php5-curl" do
+	action :install
+	notifies :reload, "service[apache2]"
+end
+
 # setup the main localhost
 web_app "localhost" do
 	server_name "localhost"
