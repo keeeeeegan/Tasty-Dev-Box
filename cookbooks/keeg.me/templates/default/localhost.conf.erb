@@ -13,7 +13,8 @@
 
   <Directory />
     Options FollowSymLinks
-    AllowOverride None
+#allows htaccess files to work, among other things
+    AllowOverride All 
   </Directory>
 
   <Location /server-status>

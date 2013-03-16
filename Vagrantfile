@@ -15,6 +15,7 @@ Vagrant::Config.run do |config|
 
   # Assign this VM to a host-only network IP
   config.vm.network :hostonly, "192.168.33.10"
+  config.ssh.forward_agent = true
 
   #config.vm.forward_port 80, 8080
   #config.vm.forward_port 8000, 8001
